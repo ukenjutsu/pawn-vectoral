@@ -1,0 +1,22 @@
+{
+    "user": "ukenjutsu",
+    "repo": "pawn-vectoral",
+    "include_path": "include",
+    "runtime": {
+        "plugins": ["ukenjutsu/pawn-vectoral"]
+    },
+    "resources": [
+        {
+            "name": "pawn-vectoral-linux.tar.gz",
+            "platform": "linux",
+            "archive": true,
+            "plugins": ["plugins/vectoral.so"]
+        },
+        {
+            "name": "pawn-vectoral-win32.zip",
+            "platform": "windows",
+            "archive": true,
+            "plugins": ["plugins/vectoral.dll"]
+        }
+    ]
+}
