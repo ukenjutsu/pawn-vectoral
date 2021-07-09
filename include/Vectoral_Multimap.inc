@@ -27,12 +27,12 @@ native cmmap_get_key_float_arr(mapid, Float:key, index, buffer[], buffersize = s
 native Float:cmmap_get_key_float_float(mapid, Float:key, index); // Get a value from key
 
 native cmmap_contains(mapid, const key[], index=-1); // If index == -1, returns if key contains, otherwise returns if key contains the index
-native cmmap_contains_int(mapid, Float:key, index=-1); // If index == -1, returns if key contains, otherwise returns if key contains the index
-native cmmap_contains_float(mapid, key, index=-1); // If index == -1, returns if key contains, otherwise returns if key contains the index
+native cmmap_contains_int(mapid, key, index=-1); // If index == -1, returns if key contains, otherwise returns if key contains the index
+native cmmap_contains_float(mapid, Float:key, index=-1); // If index == -1, returns if key contains, otherwise returns if key contains the index
 
-native cmmap_get_type(mapid, const key[], index); // If index == -1, returns if key contains, otherwise returns if key contains the index
-native cmmap_get_type_int(mapid, Float:key, index); // If index == -1, returns if key contains, otherwise returns if key contains the index
-native cmmap_get_type_float(mapid, key, index); // If index == -1, returns if key contains, otherwise returns if key contains the index
+native cmmap_get_type(mapid, const key[], index); // returns value type
+native cmmap_get_type_int(mapid, key, index); // returns value type
+native cmmap_get_type_float(mapid, Float:key, index); // returns value type
 
 native cmmap_clear(mapid); // Remove all keys in map
 native cmmap_size(mapid); // Return a multimap size
